@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ReactionSpeedActivity"
+    android:id="@+id/gameField"
+    android:background="#99ffff"
+    >
+
+    <TextView
+        android:text="Score: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:text="Time: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:layout_below="@+id/score"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:onClick="instructions_Click"
+            android:id="@+id/instructions"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/buttondraw"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Start Game"
+            android:onClick="start_Click"
+            android:id="@+id/start"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/buttondraw"
+            />
+
+    </RelativeLayout>
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Instructions"-->
+        <!--android:onClick="instructions_Click"-->
+        <!--android:id="@+id/instructions"-->
+        <!--android:layout_below="@+id/start"-->
+        <!--android:layout_centerInParent="true" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Start Game"-->
+        <!--android:onClick="start_Click"-->
+        <!--android:id="@+id/start"-->
+        <!--android:layout_below="@+id/target"-->
+        <!--android:paddingTop="20dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_centerInParent="true" />-->
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/target"
+        android:layout_centerInParent="true"
+        android:src="@drawable/b0"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/criteria"
+        android:text="Your match criteria"
+        android:layout_above="@+id/target"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10dp"
+        android:textSize="20dp" />
+
+</RelativeLayout>
